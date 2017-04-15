@@ -1,6 +1,7 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "kernel/vga_driver.h"
  
 /* Check if the compiler thinks we are targeting the wrong operating system. */
@@ -25,5 +26,5 @@ void kernel_main(void){
                     "  \\___/ \\_| \\_| \\___/  \\___/ \\_| \\_/  \n");
  
 	vga_writestring("\n\tv0.0 unstable\n\n");
-	vga_writestring("Hello, kernel World!\n");
+	printf("Hello, Kernel World!\n");
 }

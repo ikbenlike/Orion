@@ -38,6 +38,19 @@ string/memcpy.o \
 string/memmove.o \
 string/memset.o \
 string/strlen.o \
+ctypes/isalnum.o \
+ctypes/isalpha.o \
+ctypes/iscntrl.o \
+ctypes/isdigit.o \
+ctypes/isgraph.o \
+ctypes/islower.o \
+ctypes/isprint.o \
+ctypes/ispunct.o \
+ctypes/isspace.o \
+ctypes/isupper.o \
+ctypes/isxdigit.o \
+ctypes/tolower.o \
+ctypes/toupper.o \
 
 HOSTEDOBJS=\
 $(ARCH_HOSTEDOBJS) \
