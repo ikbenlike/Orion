@@ -38,6 +38,10 @@ string/memcpy.o \
 string/memmove.o \
 string/memset.o \
 string/strlen.o \
+string/strchr.o \
+string/memchr.o \
+string/strcpy.o \
+string/strncpy.o \
 ctypes/isalnum.o \
 ctypes/isalpha.o \
 ctypes/iscntrl.o \
