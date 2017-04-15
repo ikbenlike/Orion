@@ -46,7 +46,7 @@ OBJS=\
 $(FREEOBJS) \
 $(HOSTEDOBJS) \
 
-LIBK_OBJS=%(FREEOBJS:.o=.libk.o)
+LIBK_OBJS=$(FREEOBJS:.o=.libk.o)
 
 BINARIES=libk.a
 
@@ -55,7 +55,7 @@ BINARIES=libk.a
 
 all: $(BINARIES) 
 
-libc.a $(OBJS)
+libc.a: $(OBJS)
 	$(AR) rcs $@ $(OBJS)
 
 libk.a: $(LIBK_OBJS)
