@@ -36,6 +36,7 @@ $(ARCHDIR)/crtbegin.o \
 $(KERNEL_OBJS) \
 $(ARCHDIR)/crtend.o \
 $(ARCHDIR)/crtn.o \
+$(ARCHDIR)/io.o \
 
 LINK_LIST=\
 $(LDFLAGS) \
@@ -45,6 +46,7 @@ $(KERNEL_OBJS) \
 $(LIBS) \
 $(ARCHDIR)/crtend.o \
 $(ARCHDIR)/crtn.o \
+$(ARCHDIR)/io.o \
 
 
 .PHONY: all clean install install-headers install-kernel

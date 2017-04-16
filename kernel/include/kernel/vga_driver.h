@@ -20,9 +20,7 @@ enum vga_color {
     VGA_COLOR_WHITE = 15,
 };
 
-//static inline uint8_t vga_entry_color(enum vga_color fg, enum vga_color bg);
-//static inline uint16_t vga_entry(unsigned char uc, uint8_t color);
-size_t strlen(const char* str);
+void vga_move_cursor(unsigned short pos);
 void vga_initialize(void);
 void vga_setcolor(uint8_t color);
 void vga_putentryat(char c, uint8_t color, size_t x, size_t y);
