@@ -4,5 +4,6 @@
 *.kernel
 *.d
 *.a
+*.log
 isodir
 sysroot

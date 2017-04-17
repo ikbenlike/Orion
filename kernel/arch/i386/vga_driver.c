@@ -93,6 +93,6 @@ void vga_write(const char* data, size_t size){
     vga_move_cursor(vga_row*VGA_WIDTH + vga_column);
 }
  
-void vga_writestring(const char* data){
+void vga_writestring(const char *data){
     vga_write(data, strlen(data));
 }

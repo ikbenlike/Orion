@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "kernel/vga_driver.h"
+#include "kernel/serial.h"
  
 #if defined(__linux__)
 #error "You are not using a cross-compiler, you will most certainly run into trouble"
@@ -23,6 +24,7 @@ void kernel_main(void){
                     "  \\___/ \\_| \\_| \\___/  \\___/ \\_| \\_/  \n");
  
 	vga_writestring("\n    v0.0 unstable\n\n");
+    serial_writestring("Hello, Serial World!");
 	printf("Hello, Kernel World!\n");
     printf("This is a test.");
 }
