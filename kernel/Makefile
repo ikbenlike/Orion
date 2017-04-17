@@ -38,6 +38,8 @@ $(ARCHDIR)/crtend.o \
 $(ARCHDIR)/crtn.o \
 $(ARCHDIR)/io.o \
 $(ARCHDIR)/serial.o \
+$(ARCHDIR)/interrupts.o \
+$(ARCHDIR)/interrupt_handler.o \
 
 LINK_LIST=\
 $(LDFLAGS) \
@@ -49,6 +51,8 @@ $(ARCHDIR)/crtend.o \
 $(ARCHDIR)/crtn.o \
 $(ARCHDIR)/io.o \
 $(ARCHDIR)/serial.o \
+$(ARCHDIR)/interrupts.o \
+$(ARCHDIR)/interrupt_handler.o \
 
 
 .PHONY: all clean install install-headers install-kernel
