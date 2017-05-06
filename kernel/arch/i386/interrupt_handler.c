@@ -13,7 +13,7 @@ void set_idt_handler(int n, unsigned int handler) {
 void set_idt() {
     idt_reg.base = (unsigned int)&idt;
     idt_reg.limit = 256 * sizeof(idt_handler_t) - 1;
-    __asm__ __volatile__("lidtl (%0)" : : "r" (&idt_reg));
+    __asm__ __volatile__("lidt (%0)" : : "r" (&idt_reg));
 }
 
 void isr_init(){

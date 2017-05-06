@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "kernel/vga_driver.h"
 #include "kernel/serial.h"
+#include "kernel/interrupt_handler.h"
  
 #if defined(__linux__)
 #error "You are not using a cross-compiler, you will most certainly run into trouble"
@@ -14,6 +15,9 @@
 #endif
 
 void kernel_main(void){
+
+    isr_init();
+
 	vga_initialize();
 
 	vga_writestring("  _____ ______  _____  _____  _   _  \n"
@@ -27,4 +31,8 @@ void kernel_main(void){
     serial_writestring("Hello, Serial World!");
 	printf("Hello, Kernel World!\n");
     printf("This is a test.");
+    __asm__ __volatile__("mov $1, %%eax" : :);
+    __asm__ __volatile__("mov $0, %%ebx" : :);
+    __asm__ __volatile__("div %%ebx" : :);
+    //while(1){}
 }

@@ -1,6 +1,7 @@
 isr_handler:
     ret
 
+.extern isr0_handler
 .global isr0
 isr0:
     cli
@@ -14,7 +15,7 @@ isr0:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr0_handler
 
     pop %eax
     mov %ax, %ds
@@ -26,6 +27,7 @@ isr0:
     sti
     iret
 
+.extern isr1_handler
 .global isr1
 isr1:
     cli
@@ -39,7 +41,7 @@ isr1:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr1_handler
 
     pop %eax
     mov %ax, %ds
@@ -51,6 +53,7 @@ isr1:
     sti
     iret
 
+.extern isr2_handler
 .global isr2
 isr2:
     cli
@@ -64,7 +67,7 @@ isr2:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr2_handler
 
     pop %eax
     mov %ax, %ds
@@ -76,6 +79,7 @@ isr2:
     sti
     iret
 
+.extern isr3_handler
 .global isr3
 isr3:
     cli
@@ -89,7 +93,7 @@ isr3:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr3_handler
 
     pop %eax
     mov %ax, %ds
@@ -101,6 +105,7 @@ isr3:
     sti
     iret
 
+.extern isr4_handler
 .global isr4
 isr4:
     cli
@@ -114,7 +119,7 @@ isr4:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr4_handler
 
     pop %eax
     mov %ax, %ds
@@ -126,6 +131,7 @@ isr4:
     sti
     iret
 
+.extern isr5_handler
 .global isr5
 isr5:
     cli
@@ -139,7 +145,7 @@ isr5:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr5_handler
 
     pop %eax
     mov %ax, %ds
@@ -151,6 +157,7 @@ isr5:
     sti
     iret
 
+.extern isr6_handler
 .global isr6
 isr6:
     cli
@@ -164,7 +171,7 @@ isr6:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr6_handler
 
     pop %eax
     mov %ax, %ds
@@ -176,6 +183,7 @@ isr6:
     sti
     iret
 
+.extern isr7_handler
 .global isr7
 isr7:
     cli
@@ -189,7 +197,7 @@ isr7:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr7_handler
 
     pop %eax
     mov %ax, %ds
@@ -201,6 +209,7 @@ isr7:
     sti
     iret
 
+.extern isr8_handler
 .global isr8
 isr8:
     cli
@@ -213,7 +222,7 @@ isr8:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr8_handler
 
     pop %eax
     mov %ax, %ds
@@ -225,6 +234,7 @@ isr8:
     sti
     iret
 
+.extern isr9_handler
 .global isr9
 isr9:
     cli
@@ -238,7 +248,7 @@ isr9:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr9_handler
 
     pop %eax
     mov %ax, %ds
@@ -250,6 +260,7 @@ isr9:
     sti
     iret
 
+.extern isr10_handler
 .global isr10
 isr10:
     cli
@@ -263,7 +274,7 @@ isr10:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr10_handler
 
     pop %eax
     mov %ax, %ds
@@ -275,6 +286,7 @@ isr10:
     sti
     iret
 
+.extern isr11_handler
 .global isr11
 isr11:
     cli
@@ -288,7 +300,7 @@ isr11:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr11_handler
 
     pop %eax
     mov %ax, %ds
@@ -300,6 +312,7 @@ isr11:
     sti
     iret
 
+.extern isr12_handler
 .global isr12
 isr12:
     cli
@@ -313,7 +326,7 @@ isr12:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr12_handler
 
     pop %eax
     mov %ax, %ds
@@ -325,6 +338,7 @@ isr12:
     sti
     iret
 
+.extern isr13_handler
 .global isr13
 isr13:
     cli
@@ -338,7 +352,7 @@ isr13:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr13_handler
 
     pop %eax
     mov %ax, %ds
@@ -350,6 +364,7 @@ isr13:
     sti
     iret
 
+.extern isr14_handler
 .global isr14
 isr14:
     cli
@@ -363,7 +378,7 @@ isr14:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr14_handler
 
     pop %eax
     mov %ax, %ds
@@ -375,6 +390,7 @@ isr14:
     sti
     iret
 
+.extern isr15_handler
 .global isr15
 isr15:
     cli
@@ -388,7 +404,7 @@ isr15:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr15_handler
 
     pop %eax
     mov %ax, %ds
@@ -400,6 +416,7 @@ isr15:
     sti
     iret
 
+.extern isr16_handler
 .global isr16
 isr16:
     cli
@@ -413,7 +430,7 @@ isr16:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr16_handler
 
     pop %eax
     mov %ax, %ds
@@ -425,6 +442,7 @@ isr16:
     sti
     iret
 
+.extern isr17_handler
 .global isr17
 isr17:
     cli
@@ -438,7 +456,7 @@ isr17:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr17_handler
 
     pop %eax
     mov %ax, %ds
@@ -450,6 +468,7 @@ isr17:
     sti
     iret
 
+.extern isr18_handler
 .global isr18
 isr18:
     cli
@@ -463,7 +482,7 @@ isr18:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr18_handler
 
     pop %eax
     mov %ax, %ds
@@ -475,6 +494,7 @@ isr18:
     sti
     iret
 
+.extern isr19_handler
 .global isr19
 isr19:
     cli
@@ -488,7 +508,7 @@ isr19:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr19_handler
 
     pop %eax
     mov %ax, %ds
@@ -500,6 +520,7 @@ isr19:
     sti
     iret
 
+.extern isr20_handler
 .global isr20
 isr20:
     cli
@@ -513,7 +534,7 @@ isr20:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr20_handler
 
     pop %eax
     mov %ax, %ds
@@ -525,6 +546,7 @@ isr20:
     sti
     iret
 
+.extern isr21_handler
 .global isr21
 isr21:
     cli
@@ -538,7 +560,7 @@ isr21:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -550,6 +572,7 @@ isr21:
     sti
     iret
 
+.extern isr22_handler
 .global isr22
 isr22:
     cli
@@ -563,7 +586,7 @@ isr22:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -575,6 +598,7 @@ isr22:
     sti
     iret
 
+.extern isr23_handler
 .global isr23
 isr23:
     cli
@@ -588,7 +612,7 @@ isr23:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -600,6 +624,7 @@ isr23:
     sti
     iret
 
+.extern isr24_handler
 .global isr24
 isr24:
     cli
@@ -613,7 +638,7 @@ isr24:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -625,6 +650,7 @@ isr24:
     sti
     iret
 
+.extern isr25_handler
 .global isr25
 isr25:
     cli
@@ -638,7 +664,7 @@ isr25:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -650,6 +676,7 @@ isr25:
     sti
     iret
 
+.extern isr26_handler
 .global isr26
 isr26:
     cli
@@ -663,7 +690,7 @@ isr26:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -675,6 +702,7 @@ isr26:
     sti
     iret
 
+.extern isr27_handler
 .global isr27
 isr27:
     cli
@@ -688,7 +716,7 @@ isr27:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -700,6 +728,7 @@ isr27:
     sti
     iret
 
+.extern isr28_handler
 .global isr28
 isr28:
     cli
@@ -713,7 +742,7 @@ isr28:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -725,6 +754,7 @@ isr28:
     sti
     iret
 
+.extern isr29_handler
 .global isr29
 isr29:
     cli
@@ -738,7 +768,7 @@ isr29:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr21to29_handler
 
     pop %eax
     mov %ax, %ds
@@ -750,6 +780,7 @@ isr29:
     sti
     iret
 
+.extern isr30_handler
 .global isr30
 isr30:
     cli
@@ -763,7 +794,7 @@ isr30:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr30_handler
 
     pop %eax
     mov %ax, %ds
@@ -775,6 +806,7 @@ isr30:
     sti
     iret
 
+.extern isr31_handler
 .global isr31
 isr31:
     cli
@@ -788,7 +820,7 @@ isr31:
     mov %ax, %fs
     mov %ax, %gs
 
-     
+    call isr31_handler
 
     pop %eax
     mov %ax, %ds

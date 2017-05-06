@@ -40,6 +40,7 @@ $(ARCHDIR)/io.o \
 $(ARCHDIR)/serial.o \
 $(ARCHDIR)/interrupts.o \
 $(ARCHDIR)/interrupt_handler.o \
+$(ARCHDIR)/isr_handler_routines.o \
 
 LINK_LIST=\
 $(LDFLAGS) \
@@ -53,6 +54,7 @@ $(ARCHDIR)/io.o \
 $(ARCHDIR)/serial.o \
 $(ARCHDIR)/interrupts.o \
 $(ARCHDIR)/interrupt_handler.o \
+$(ARCHDIR)/isr_handler_routines.o \
 
 
 .PHONY: all clean install install-headers install-kernel
